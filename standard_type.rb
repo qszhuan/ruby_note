@@ -25,3 +25,6 @@ f.close()
 
 # ranges as intervals
 puts (1..10) === 5
+
+r = 1...10
+puts r.max()

@@ -28,3 +28,8 @@ p "\123mile"
 p "Say \"Hello\""
 
 p %Q!"I said 'nuts', " i said!
+
+#字符串字面量被用作赋值语句或作为参数时，一个新的string对象将被创建
+3.times do 
+  print "hello".object_id, " "
+end
