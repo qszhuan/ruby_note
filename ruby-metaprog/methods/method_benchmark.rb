@@ -1,4 +1,4 @@
-class String
+XFclass String
   def method_missing(method, *args)
     method == :ghost_reverse ? reverse: super
   end
