@@ -17,4 +17,20 @@ obj.instance_exec(3) { |arg| @v = arg; p @v}
 
 
 # Clean Room
+class CleanRoom
+  def complex_calc
+    5
+  end
+
+  def do_something
+    p "do something"
+  end
+end
+
+obj = CleanRoom.new
+obj.instance_eval do
+  if complex_calc < 10
+    do_something
+  end
+end
 
