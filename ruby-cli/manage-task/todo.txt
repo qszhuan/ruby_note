@@ -1,2 +1,4 @@
-add new field to database, 2012-05-08 23:51:08 +0800
-add scripts for migration, 2012-05-09 00:04:00 +0800
+add new field to database, 2012-05-08 23:51:08 +0800,2012-05-09 23:16:06 +0800
+add scripts for migration, 2012-05-09 00:04:00 +0800,
+a,2012-05-09 22:48:56 +0800,
+a,2012-05-09 22:49:22 +0800,
