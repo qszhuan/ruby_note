@@ -10,11 +10,17 @@ option_parser = OptionParser.new do |opts|
   end
 
   # Create a flag
-  opts.on("-u USER") do |user| 
-    unless user =~ /^.+\..+$/
-      raise ArgumentError, "User name must be in 'first.last' format"
-    end
+  opts.on("-u USER", /^.+\..+$/) do |user| 
     options[:user] = user
+  end
+
+  servers = {
+    'dev' => '127.0.0.1',
+    'qa' => 'www.server.com',
+    'prod' => 'www.real.com'
+  }
+  opts.on("--server SERVER", servers) do |address|
+    options[:address] = address
   end
 
   opts.on("-p PASSWORD") do |password| options[:password] = password
